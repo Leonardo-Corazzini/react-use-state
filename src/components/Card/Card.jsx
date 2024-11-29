@@ -1,11 +1,12 @@
 
 
-export default function Card() {
+export default function Card({ language = {} }) {
+    const { title, description } = language
     return (
         <div className="card">
             <div className="body">
-                <h3 className="title">Test</h3>
-                <p className="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure repellat velit minima ipsum sunt magnam earum minus molestias. Possimus quae dolorum expedita debitis! Totam iste iure, pariatur vel enim possimus!</p>
+                <h3 className="title">{title}</h3>
+                <p className="content"> {description}</p>
             </div>
         </div>
     )

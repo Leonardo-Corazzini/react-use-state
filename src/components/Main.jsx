@@ -1,5 +1,6 @@
 import Button from "./Button/Button"
-import Card from "./Card/Card"
+// import Card from "./Card/Card"
+import languages from "../languages"
 
 
 
@@ -7,8 +8,8 @@ import Card from "./Card/Card"
 export default function Main() {
     return (
         <>
-            <Button />
-            <Card />
+            <Button languages={languages} />
+
         </>
 
     )
