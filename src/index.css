@@ -1,0 +1,11 @@
+/* reset rules */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: rgb(224, 232, 241);
+  padding: 15px 25px;
+}
