@@ -1,6 +1,6 @@
 
 
-export default function Card({ language = {} }) {
+export default function Card({ language }) {
     const { title, description } = language
     return (
         <div className="card">

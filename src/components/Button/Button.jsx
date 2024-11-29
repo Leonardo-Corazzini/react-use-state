@@ -1,23 +1,25 @@
-import { useState } from "react"
-import Card from "../Card/Card"
+// import { useState } from "react"
+// import Card from "../Card/Card"
+import style from "./Button.module.css"
 
 
+export default function Button({ language, callback, isActive }) {
 
-export default function Button({ languages }) {
-
-    const [clickLanguage, setClickLanguage] = useState({})
+    // const [clickLanguage, setClickLanguage] = useState({})
+    const { title } = language
 
 
 
     return (
         <>
-            {languages.map((language) => (
+            {/* {languages.map((language) => (
                 <button onClick={() => setClickLanguage(language)} key={language.id}>{language.title}</button>
             )
 
             )}
 
-            <Card language={clickLanguage} />
+            <Card language={clickLanguage} /> */}
+            <button className={isActive ? style.active : undefined} onClick={callback}>{title}</button>
         </>
     )
 }
