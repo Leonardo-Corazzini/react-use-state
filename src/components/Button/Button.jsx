@@ -19,7 +19,7 @@ export default function Button({ language, callback, isActive }) {
             )}
 
             <Card language={clickLanguage} /> */}
-            <button className={isActive ? style.active : undefined} onClick={callback}>{title}</button>
+            <button className={`${style.button} ${isActive ? style.active : undefined}`} onClick={callback}>{title}</button>
         </>
     )
 }

@@ -1,3 +1,10 @@
+.button {
+    border-radius: 5px;
+    padding: 5px 15px;
+    background-color: rgb(126, 32, 233);
+    color: white;
+}
+
 .active {
     background-color: yellow;
 }

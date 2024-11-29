@@ -5,8 +5,8 @@ import { useState } from "react"
 
 const none =
 {
-    title: "none",
-    description: "nessun elemento selezionato"
+    title: "nessun elemento selezionato",
+    description: "Premi un pulsante per avere informazione riguardanti quell'argomento."
 }
 
 export default function Main() {
@@ -16,11 +16,23 @@ export default function Main() {
     return (
         <>
             {/* <Button languages={languages} /> */}
-            {languages.map((language) => (
-                <Button key={language.id} language={language} callback={() => setClickLanguage(language)} isActive={clickLanguage === language} />
-            )
-            )}
-            <Card language={clickLanguage ? clickLanguage : none} />
+            <div className="container">
+                <div className="row">
+                    <div className="button-section">
+                        {languages.map((language) => (
+                            <Button key={language.id} language={language} callback={() => setClickLanguage(language)} isActive={clickLanguage === language} />
+                        )
+                        )}
+                    </div>
+                    <div className="card-section">
+                        <Card language={clickLanguage ? clickLanguage : none} />
+                    </div>
+                </div>
+
+
+
+            </div>
+
 
         </>
 

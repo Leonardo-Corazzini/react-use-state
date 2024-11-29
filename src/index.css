@@ -5,7 +5,50 @@
   padding: 0;
 }
 
+button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+
+}
+
 header {
-  background-color: rgb(224, 232, 241);
+  background-color: rgb(64, 90, 60);
   padding: 15px 25px;
+  box-shadow: 15px 10px 75px rgb(21, 255, 0);
+}
+
+h1 {
+  color: rgb(114, 199, 57);
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 35px;
+  margin: 70px 0px 120px;
+}
+
+.card-section {
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
 }
